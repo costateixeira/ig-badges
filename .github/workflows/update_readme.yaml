@@ -14,8 +14,8 @@ jobs:
       run: |
         sed -i -e "s|__GH_OWNER__|${GITHUB_REPOSITORY_OWNER}|g" output/text.txt
         sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         output/text.txt
-        sed -i -e "s|__GH_REPO__|${GITHUB_REF}|g"   output/text.txt
-#        sed -i -e "s|__GH_REPO__|${$GITHUB_REPOSITORY##*/}|g"   output/text.txt
+        sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"   output/text.txt
+#        sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"   output/text.txt
 #        sed -i -e "s|__GH_REPO__|${GITHUB_REF##*/}|g" output/text.txt
 #        sed -i 's/__GH_REPO__/${{ github.repository }}/g' output/text.txt
     - name: stage changed files
