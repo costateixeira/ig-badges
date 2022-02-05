@@ -17,7 +17,7 @@ jobs:
     - name: Deploy candidate
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-        branch: ${{ steps.branch-name.outputs.current_branch }} # The branch the action should deploy to.
+        branch: ${{ GITHUB_REF_NAME }} # The branch the action should deploy to.
         folder: ./output # The folder the action should deploy.
         commit-message: Deploy candidate branch
         target-folder: output2
