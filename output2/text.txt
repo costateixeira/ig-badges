@@ -1,4 +1,0 @@
-
-OWNER: costateixeira 
-REPO: ig-badges 
-BRANCH: main 
