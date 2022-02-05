@@ -3,7 +3,7 @@
 concurrency: ci-${{ github.ref }}
 
 on: push
-name: Update Readme
+name: UpdateReadme
 jobs:
   web-deploy:
     name: Ubuntu VM
