@@ -1,4 +1,6 @@
-
-OWNER: costateixeira 
-REPO: ig-badges 
-BRANCH: main 
+{
+  "schemaVersion": 1,
+  "label": "errors",
+  "message": "1",
+  "color": "orange"
+}
