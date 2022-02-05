@@ -1,2 +1,2 @@
 
-REPO: __GH_REPO__ 
+REPO: costateixeira/ig-badges 
