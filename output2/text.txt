@@ -1,2 +1,2 @@
 
-REPO: costateixeira/ig-badges 
+REPO: main 
