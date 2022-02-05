@@ -2,7 +2,7 @@
 #  gh_owner: ${GITHUB_REPOSITORY_OWNER}
 concurrency: ci-${{ github.ref }}
 
-  on: push
+on: push
 name: UpdateReadme
 jobs:
   web-deploy:
