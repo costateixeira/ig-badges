@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "warnings",
+  "label": "QA warnings",
   "message": "0",
   "color": "green"
 }
