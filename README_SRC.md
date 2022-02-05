@@ -3,8 +3,8 @@
 ![qa-errs](https://img.shields.io/github/workflow/status/__GH_OWNER__/__GH_REPO__/UpdateReadme?label=Build%20status)
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
-![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/__GH_OWNER__/__GH_REPO__/__GH_BRANCH__/qa-errs.json)
-![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/__GH_OWNER__/__GH_REPO__/__GH_BRANCH__/qa-warns.json)
+![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/__GH_OWNER__/__GH_REPO__/__GH_BRANCH__/status/qa-errs.json)
+![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/__GH_OWNER__/__GH_REPO__/__GH_BRANCH__/status/qa-warns.json)
 
 
 
