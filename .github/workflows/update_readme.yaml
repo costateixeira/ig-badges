@@ -15,3 +15,12 @@ jobs:
       run: git add ./text.txt
     - name: commit changed files
       run: git commit -m "Auto updating text.txt"
+
+    - name: Deploy candidate
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: ${{ steps.branch-name.outputs.current_branch }} # The branch the action should deploy to.
+        folder: ./output # The folder the action should deploy.
+        commit-message: Deploy candidate branch
+#        target-folder: branches/${{ steps.branch-name.outputs.current_branch }}
+        clean: false 
