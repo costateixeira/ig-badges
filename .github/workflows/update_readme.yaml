@@ -1,0 +1,13 @@
+on: push
+name: FTP Deploy
+jobs:
+  web-deploy:
+    name: Ubuntu VM
+    runs-on: ubuntu-latest
+    steps:
+    - name: Getting latest Code
+      uses: actions/checkout@v2.3.2
+    - name: Replace text
+      run: |
+        sed -i -e "s|__GH_REPO__|${{ github.repository }}|g" text.txt
+#        sed -i 's/__GH_REPO__/${{ github.repository }}/g' text.txt
