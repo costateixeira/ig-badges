@@ -1,3 +1,4 @@
 
-REPO: __GH_REPO__ 
 OWNER: __GH_OWNER__ 
+REPO: __GH_REPO__ 
+BRANCH: __GH_BRANCH__ 
