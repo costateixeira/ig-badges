@@ -1,4 +1,4 @@
 
 OWNER: costateixeira 
-REPO: main 
-BRANCH: __GH_BRANCH__ 
+REPO: refs/heads/main 
+BRANCH: main 
