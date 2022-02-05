@@ -17,7 +17,7 @@ jobs:
         sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         README_SRC.md
         sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    README_SRC.md
 
-#    - name: stage changed files
+    - name: Create readme
       run: cp README_SRC.md README.md
 
 #    - name: stage changed files
