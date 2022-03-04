@@ -17,10 +17,8 @@ jobs:
       with:
         args: -O README_SRC.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/README_SRC.md    
       
-      
-      
     - name: Create readme
-      run: cp README_SRC.md README.md
+      run: cp README_SRC.md README3.md
 
     - name: Replace text
       run: |
