@@ -1,6 +1,6 @@
 ### IG Badges
 
-![qa-errs](https://img.shields.io/github/workflow/status/${{ REPOSITORY_OWNER }}/${{ REPOSITORY_SLUG }}/UpdateReadme?label=Build%20status)
+![qa-errs](https://img.shields.io/github/workflow/status/${{REPOSITORY_OWNER}}/${{REPOSITORY_SLUG}}/UpdateReadme?label=Build%20status)
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 ![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/${{ REPOSITORY_OWNER }}/${{ REPOSITORY_SLUG }}/${{ GITHUB_REF_NAME_SLUG }}/status/qa-errs.json)
