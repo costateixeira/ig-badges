@@ -16,9 +16,9 @@ jobs:
 
     - name: Replace text
       run: |
-        sed -i -e "s|${{ GH_OWNER }}|${GITHUB_REPOSITORY_OWNER}|g" README.md
-        sed -i -e "s|${{ GH_BRANCH }}|${GITHUB_REF##*/}|g"         README.md
-        sed -i -e "s|${{ GH_REPO }}|${GITHUB_REPOSITORY##*/}|g"    README.md
+        sed -i -e "s|__GH_OWNER__|${GITHUB_REPOSITORY_OWNER}|g" README.md
+        sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         README.md
+        sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    README.md
 
 #    - name: stage changed files
 #      run: git add ./text.txt
@@ -32,5 +32,4 @@ jobs:
         commit-message: Deploy branch
         target-folder: .
         clean: false 
-
 
