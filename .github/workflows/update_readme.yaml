@@ -5,6 +5,18 @@ concurrency: ci-${{ github.ref }}
 on:
   push:
   workflow_call:
+    inputs:
+      token:
+        required: true
+        type: string
+      repo:
+        required: true
+        type: string
+      branch:
+        required: true
+        type: string
+
+
 name: UpdateReadme
 jobs:
   web-deploy:
