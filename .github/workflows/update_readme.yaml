@@ -54,3 +54,17 @@ jobs:
         target-folder: .
         clean: false 
 
+#${{ inputs.repo }}
+
+    - name: Pushes test file
+      uses: tech-thinker/push-to-repo@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.GIT_PAT_TOKEN }}
+      with:
+        user-name: "github-actions[bot]"
+        user-email: github-actions[bot]@users.noreply.github.com
+        source-directory: "output-dir"
+        destination-github-username: "username"
+        destination-repository-name: '${{ inputs.token }}/${{ inputs.repo }}'
+        target-branch: '${{ inputs.branch }}'
+
