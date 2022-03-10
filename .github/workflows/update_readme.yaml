@@ -67,3 +67,17 @@ jobs:
         destination-github-username: "${{ inputs.token }}"
         destination-repository-name: '${{ inputs.repo }}'
         target-branch: '${{ inputs.branch }}'
+
+
+
+    - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'README.md'
+        destination_repo: '${{ inputs.token }}/${{ inputs.repo }}'
+        destination_folder: '/'
+        user_email: 'example@email.com'
+        user_name: 'costateixeira'
+        commit_message: 'A custom message for the commit'
