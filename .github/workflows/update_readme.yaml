@@ -56,17 +56,17 @@ jobs:
 
 #${{ inputs.repo }}
 
-    - name: Pushes test file
-      uses: tech-thinker/push-to-repo@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.GIT_PAT_TOKEN }}
-      with:
-        user-name: "github-actions[bot]"
-        user-email: github-actions[bot]@users.noreply.github.com
-        source-directory: "./README.md"
-        destination-github-username: "${{ inputs.token }}"
-        destination-repository-name: '${{ inputs.repo }}'
-        target-branch: '${{ inputs.branch }}'
+#    - name: Pushes test file
+#      uses: tech-thinker/push-to-repo@main
+#      env:
+#        API_TOKEN_GITHUB: ${{ secrets.GIT_PAT_TOKEN }}
+#      with:
+#        user-name: "github-actions[bot]"
+#        user-email: github-actions[bot]@users.noreply.github.com
+#        source-directory: "./README.md"
+#        destination-github-username: "${{ inputs.token }}"
+#        destination-repository-name: '${{ inputs.repo }}'
+#        target-branch: '${{ inputs.branch }}'
 
 
 
@@ -78,6 +78,7 @@ jobs:
         source_file: 'README.md'
         destination_repo: '${{ inputs.token }}/${{ inputs.repo }}'
         destination_folder: '/'
+        destination_branch: '${{ inputs.branch }}'
         user_email: 'example@email.com'
         user_name: 'costateixeira'
         commit_message: 'A custom message for the commit'
