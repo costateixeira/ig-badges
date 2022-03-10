@@ -17,6 +17,7 @@ This is an empty IG
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/__GH_OWNER__/__GH_REPO__/branches/main/index.html__  
+Continuous Build: __http://__GH_OWNER__.github.io/__GH_REPO__/branches/main/index.html__  
 Continuous Build: __http://__GH_OWNER__.github.io/__GH_REPO__/index.html__  
 Canonical / permanent URL: 
 <br> </br>
