@@ -79,6 +79,6 @@ jobs:
         destination_repo: '${{ inputs.token }}/${{ inputs.repo }}'
         destination_folder: '/'
         destination_branch: '${{ inputs.branch }}'
-        user_email: 'example@email.com'
+        user_email: 'jose.a.teixeira@gmail.com'
         user_name: 'costateixeira'
         commit_message: 'A custom message for the commit'
