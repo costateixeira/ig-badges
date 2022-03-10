@@ -28,6 +28,7 @@ jobs:
         sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         README3.md
         sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    README3.md
 
+    - run: ls
     - name: stage changed files
       run: git add ./README3.md
 
