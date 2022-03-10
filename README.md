@@ -17,6 +17,7 @@ This is an empty IG
 This ImplementationGuide is published in the following locations:
 
 Continuous Build: __http://build.fhir.org/ig/costateixeira/ig-badges/branches/main/index.html__  
+Continuous Build: __http://costateixeira.github.io/ig-badges/branches/main/index.html__  
 Continuous Build: __http://costateixeira.github.io/ig-badges/index.html__  
 Canonical / permanent URL: 
 <br> </br>
