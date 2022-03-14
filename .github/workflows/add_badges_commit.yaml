@@ -29,7 +29,7 @@ jobs:
     - name: wget
       uses: wei/wget@v1
       with:
-        args: -O README_SRC.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/badges.md    
+        args: -O badges.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/badges.md    
       
     - name: Replace text in badges
       run: |
@@ -46,7 +46,6 @@ jobs:
     - run: ls
     
     - run: |
-        rm README_SRC.md
         rm badges.md
         
     - name: stage changed files
