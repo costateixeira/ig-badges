@@ -41,7 +41,7 @@ jobs:
       run: |
         FILE2=$(<README.md)
         FILE1=$(<badges.md)
-        echo "${FILE2//{% include badges.md %}/$FILE1}" > README2.md
+        echo "${FILE2//XXXXXbadgesXXXXX/$FILE1}" > README2.md
 
     - run: ls
     
