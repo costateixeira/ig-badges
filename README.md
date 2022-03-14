@@ -25,4 +25,9 @@ Kanban board:  __https://github.com/costateixeira/ig-badges/projects/1__
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 ![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/costateixeira/ig-badges/main/status/qa-errs.json)
+![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/costateixeira/ig-badges/main/status/qa-warns.json)}/### IG Status
+![qa-errs](https://img.shields.io/github/workflow/status/costateixeira/ig-badges/ig-build?label=Build%20status)
+
+![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
+![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/costateixeira/ig-badges/main/status/qa-errs.json)
 ![qa-errs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/costateixeira/ig-badges/main/status/qa-warns.json)}
