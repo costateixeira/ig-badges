@@ -1,5 +1,6 @@
 
-{% include badges.md %}
+XXXXXbadgesXXXXX
+
 
 Empty IG
 ---
