@@ -1,5 +1,5 @@
 
-XXXXXbadgesXXXXX
+<!-- badges -->
 
 
 Empty IG
