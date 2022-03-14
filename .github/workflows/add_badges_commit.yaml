@@ -29,18 +29,16 @@ jobs:
     - name: wget
       uses: wei/wget@v1
       with:
-        args: -O README_SRC.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/README_SRC.md    
+        args: -O README_SRC.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/badges.md    
       
-    - name: Create readme
-      run: cp README_SRC.md badges.md
-
-    - name: Replace text
+    - name: Replace text in badges
       run: |
         sed -i -e "s|__GH_OWNER__|${GITHUB_REPOSITORY_OWNER}|g" badges.md
         sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         badges.md
         sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    badges.md
 
-    - run: |
+    - name: replace include with content of badges
+      run: |
         FILE2=$(<README.md)
         FILE1=$(<badges.md)
         echo "${FILE2//{% include badges.md %}/$FILE1}" > README.md
