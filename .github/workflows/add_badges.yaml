@@ -31,14 +31,16 @@ jobs:
       with:
         args: -O badges.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/badges.md    
       
-    - name: Replace text in badges
+    - name: Replace text in badges file with current repo values
       run: |
         sed -i -e "s|__GH_OWNER__|${GITHUB_REPOSITORY_OWNER}|g" badges.md
         sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         badges.md
         sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    badges.md
 
     - name: replace include with content of badges
-      run: awk 'NR==FNR{new = new $0 ORS; next} /<!--\/badges-->/{f=0} !f{print} /<!--badges-->/{printf "%s",new; f=1}' badges.md READMENEW.md
+      run: |
+        awk 'NR==FNR{new = new $0 ORS; next} /<!--\/badges-->/{f=0} !f{print} /<!--badges-->/{printf "%s",new; f=1}' badges.md README.md > README_NEW.md
+        mv README_NEW.md README.md
 
     - run: ls
     
