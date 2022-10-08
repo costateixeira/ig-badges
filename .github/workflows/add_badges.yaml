@@ -40,7 +40,6 @@ jobs:
     - name: replace include with content of badges
       run: |
         awk 'NR==FNR{new = new $0 ORS; next} /<!--\/badges-->/{f=0} !f{print} /<!--badges-->/{printf "%s",new; f=1}' badges.md README.md > README_NEW.md
-        more badges.md
         mv README_NEW.md README.md
         more README.md
 
@@ -52,7 +51,7 @@ jobs:
         rm badges.md
         
     - name: stage changed files
-      run: git add .
+      run: git add README.md
 
 
     - name: Deploy candidate
