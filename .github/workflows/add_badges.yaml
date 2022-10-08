@@ -51,14 +51,14 @@ jobs:
         rm badges.md
         
     - name: stage changed files
-      run: git add README.md
+      run: git add ./README.md
 
 
     - name: Deploy candidate
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
-#        branch: ${GITHUB_REF##*/} # The branch the action should deploy to.
-        branch: main # The branch the action should deploy to.
+        branch: ${GITHUB_REF##*/} # The branch the action should deploy to.
+#        branch: main # The branch the action should deploy to.
         folder: . # The folder the action should deploy.
         commit-message: Deploy branch
         target-folder: .
