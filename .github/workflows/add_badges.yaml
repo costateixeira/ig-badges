@@ -2,14 +2,9 @@ concurrency: ci-${{ github.ref }}
 
 on:
   push:
+  pull_request:
   workflow_call:
-    inputs:
-      token:
-        type: string
-      repo:
-        type: string
-      branch:
-        type: string
+  workflow_dispatch:
 
 name: UpdateReadme
 jobs:
