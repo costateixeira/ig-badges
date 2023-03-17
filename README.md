@@ -4,8 +4,9 @@
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 
-![Custom Shield](https://img.shields.io/badge/Errors1-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | jq -r .errs)-red)
 ![Custom Shield](https://img.shields.io/badge/Errors2-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | grep -o '"errs":[0-9]*' | cut -d':' -f2)-red)
+
+![Custom Shield](https://img.shields.io/badge/Errors1-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | jq -r .errs)-red)
 
 ![Custom Shield](https://img.shields.io/badge/Errors3-85-red)
 
