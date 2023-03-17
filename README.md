@@ -4,6 +4,8 @@
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 
+![Custom Shield](https://img.shields.io/badge/Errors-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | jq -r .errs)-red)
+
 ![Errors](https://img.shields.io/badge/Errors-33-red)
 ![Warnings](https://img.shields.io/badge/Warnings-416-yellow)
 <!--/badges-->
