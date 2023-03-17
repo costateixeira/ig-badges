@@ -3,16 +3,7 @@
 
 ![issues](https://img.shields.io/github/issues/__GH_OWNER__/__GH_REPO__)
 
-![Custom Shield](https://img.shields.io/badge/Errors2-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | grep -o '"errs":[0-9]*' | cut -d':' -f2)-red)
-
-![Custom Shield](https://img.shields.io/badge/Errors1-$(curl -s https://raw.githubusercontent.com/__GH_OWNER__/__GH_REPO__/gh-pages/qa.json | jq -r .errs)-red)
-
-![Custom Shield](https://img.shields.io/badge/Errors3-85-red)
-
-![Custom Shield](https://img.shields.io/badge/Errors4-__ERRS__-red)
-
-
-![Custom Shield](https://img.shields.io/badge/Errors-<script>(async()=>{let response=await fetch('https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json');let json=await response.json();document.write(json.errs)})()</script>-red)
+![Custom Shield](https://img.shields.io/badge/Errors4-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | sed -n 's/.*"errs":[[:space:]]*\([[:digit:]]*\).*/\1/p')-red)
 
 ![Errors](https://img.shields.io/badge/Errors-__ERRS__-red)
 ![Warnings](https://img.shields.io/badge/Warnings-__WARNINGS__-yellow)
