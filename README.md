@@ -6,7 +6,7 @@
 
 ![Errors](https://img.shields.io/badge/QA Errors-33-red)
 ![Warnings](https://img.shields.io/badge/QA Warnings-416-yellow)
-![Warnings](https://img.shields.io/badge/QA Hints-__HINTS__-yellow)
+![Warnings](https://img.shields.io/badge/QA Hints-1111-yellow)
 
 <!--/badges-->
 
