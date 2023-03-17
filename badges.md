@@ -1,4 +1,4 @@
-### IG Status
+### Status
 ![qa-errs](https://img.shields.io/github/actions/workflow/status/__GH_OWNER__/__GH_REPO__/ig-build?label=Build%20status)
 
 ![issues](https://img.shields.io/github/issues/__GH_OWNER__/__GH_REPO__)
