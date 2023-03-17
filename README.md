@@ -1,13 +1,12 @@
 <!--badges-->
 ### IG Status
-![qa-errs](https://img.shields.io/github/workflow/status/costateixeira/ig-badges/ig-build?label=Build%20status)
+![qa-errs](https://img.shields.io/github/actions/workflow/status/costateixeira/ig-badges/ig-build?label=Build%20status)
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 
-![Custom Shield](https://img.shields.io/badge/Errors4-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | sed -n 's/.*"errs":[[:space:]]*\([[:digit:]]*\).*/\1/p')-red)
-
-![Errors](https://img.shields.io/badge/Errors-33-red)
-![Warnings](https://img.shields.io/badge/Warnings-416-yellow)
+![Errors](https://img.shields.io/badge/QA Errors-33-red)
+![Warnings](https://img.shields.io/badge/QA Warnings-416-yellow)
+![Warnings](https://img.shields.io/badge/QA Hints-__HINTS__-yellow)
 
 <!--/badges-->
 
