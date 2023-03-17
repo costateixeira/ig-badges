@@ -1,0 +1,22 @@
+concurrency: ci-${{ github.ref }}
+
+on:
+  push:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+name: UpdateReadme
+jobs:
+  web-deploy:
+    name: Ubuntu VM
+    runs-on: ubuntu-latest
+    steps:
+    - name: Getting latest Code
+      uses: actions/checkout@v2.3.2
+      
+    - name: wget
+      uses: wei/wget@v1
+      with:
+        args: -O badges.md https://raw.githubusercontent.com/costateixeira/ig-badges/main/badges.md    
+      
