@@ -3,5 +3,7 @@
 
 ![issues](https://img.shields.io/github/issues/__GH_OWNER__/__GH_REPO__)
 
+![Custom Shield](https://img.shields.io/badge/Errors-$(curl -s https://raw.githubusercontent.com/__GH_OWNER__/__GH_REPO__/gh-pages/qa.json | jq -r .errs)-red)
+
 ![Errors](https://img.shields.io/badge/Errors-__ERRS__-red)
 ![Warnings](https://img.shields.io/badge/Warnings-__WARNINGS__-yellow)
