@@ -3,8 +3,8 @@
 
 ![issues](https://img.shields.io/github/issues/__GH_OWNER__/__GH_REPO__)
 
-![Errors](https://img.shields.io/badge/QA Errors-__ERRS__-red)
-![Warnings](https://img.shields.io/badge/QA Warnings-__WARNINGS__-yellow)
-![Hints](https://img.shields.io/badge/QA Warnings-__HINTS__-yellowgree)
+![Errors](https://img.shields.io/badge/QA%20Errors-__ERRS__-red)
+![Warnings](https://img.shields.io/badge/QA%20Warnings-__WARNINGS__-yellow)
+![Hints](https://img.shields.io/badge/QA%20Hints-__HINTS__-yellowgree)
 
 
