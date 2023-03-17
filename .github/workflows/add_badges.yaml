@@ -32,8 +32,10 @@ jobs:
         sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    badges.md
         ERRS=$(jq '.errs' output/qa.json)
         WARNINGS=$(jq '.warnings' output/qa.json)
+        HINTS=$(jq '.hints' output/qa.json)
         sed -i -e "s|__ERRS__|$ERRS|g" badges.md
         sed -i -e "s|__WARNINGS__|$WARNINGS|g" badges.md
+        sed -i -e "s|__HINTS__|$HINTS|g" badges.md
         
     - name: replace include with content of badges
       run: |
