@@ -5,8 +5,11 @@
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 
 ![Errors](https://img.shields.io/badge/QA Errors-33-red)
+
 ![Warnings](https://img.shields.io/badge/QA Warnings-416-yellow)
-![Warnings](https://img.shields.io/badge/QA Hints-1111-yellow)
+
+![Warnings](https://img.shields.io/badge/QA Hints-1111-green)
+
 
 <!--/badges-->
 
