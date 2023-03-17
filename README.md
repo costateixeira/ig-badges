@@ -10,12 +10,14 @@
 
 ![Custom Shield](https://img.shields.io/badge/Errors3-85-red)
 
+![Custom Shield](https://img.shields.io/badge/Errors4-33-red)
+
+
+![Custom Shield](https://img.shields.io/badge/Errors-<script>(async()=>{let response=await fetch('https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json');let json=await response.json();document.write(json.errs)})()</script>-red)
+
 ![Errors](https://img.shields.io/badge/Errors-33-red)
 ![Warnings](https://img.shields.io/badge/Warnings-416-yellow)
 
-
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
 <!--/badges-->
 
 
