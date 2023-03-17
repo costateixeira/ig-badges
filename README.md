@@ -4,16 +4,7 @@
 
 ![issues](https://img.shields.io/github/issues/costateixeira/ig-badges)
 
-![Custom Shield](https://img.shields.io/badge/Errors2-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | grep -o '"errs":[0-9]*' | cut -d':' -f2)-red)
-
-![Custom Shield](https://img.shields.io/badge/Errors1-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | jq -r .errs)-red)
-
-![Custom Shield](https://img.shields.io/badge/Errors3-85-red)
-
-![Custom Shield](https://img.shields.io/badge/Errors4-33-red)
-
-
-![Custom Shield](https://img.shields.io/badge/Errors-<script>(async()=>{let response=await fetch('https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json');let json=await response.json();document.write(json.errs)})()</script>-red)
+![Custom Shield](https://img.shields.io/badge/Errors4-$(curl -s https://raw.githubusercontent.com/costateixeira/ig-badges/gh-pages/qa.json | sed -n 's/.*"errs":[[:space:]]*\([[:digit:]]*\).*/\1/p')-red)
 
 ![Errors](https://img.shields.io/badge/Errors-33-red)
 ![Warnings](https://img.shields.io/badge/Warnings-416-yellow)
