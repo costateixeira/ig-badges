@@ -30,7 +30,7 @@ jobs:
         sed -i -e "s|__GH_OWNER__|${GITHUB_REPOSITORY_OWNER}|g" badges.md
         sed -i -e "s|__GH_BRANCH__|${GITHUB_REF##*/}|g"         badges.md
         sed -i -e "s|__GH_REPO__|${GITHUB_REPOSITORY##*/}|g"    badges.md
-        ERRS=$(jq '.errs' qa.json)
+        ERRS=$(jq '.errs' output/qa.json)
         WARNINGS=$(jq '.warnings' qa.json)
         sed -i -e "s|__ERRS__|$ERRS|g" badges.md
         sed -i -e "s|__WARNINGS__|$WARNINGS|g" badges.md
